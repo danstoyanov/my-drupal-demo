@@ -1,0 +1,21 @@
+name: Ice-Cream
+type: theme
+description: 'A great theme for the night.'
+base theme: stable9
+package: Custom
+core_version_requirement: ^8 || ^9 || ^10
+libraries:
+  - icecream/global-styling
+
+regions:
+  header: 'Header'
+  content: 'Content'
+  content_bottom: 'Content (bottom)'
+  primary_menu: 'Primary menu'
+  banner_top: 'Banner (top)'
+  banner_bottom: 'Banner (bottom)'
+  footer: 'Footer'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+
+

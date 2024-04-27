@@ -1,0 +1,9 @@
+# Schema for the configuration files of the Ice Cream theme.
+
+icecream.settings:
+  type: theme_settings
+  label: 'Ice Cream settings'
+  mapping:
+    site_branding_bg_color:
+      type: string
+      label: 'Site branding background color'

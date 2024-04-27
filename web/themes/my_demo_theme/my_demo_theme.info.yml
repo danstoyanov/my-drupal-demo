@@ -1,0 +1,22 @@
+name: my_demo_theme
+type: theme
+'base theme': stable9
+starterkit: true
+version: VERSION
+libraries:
+  - my_demo_theme/base
+  - my_demo_theme/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - my_demo_theme/user
+  core/drupal.dropbutton:
+    - my_demo_theme/dropbutton
+  core/drupal.dialog:
+    - my_demo_theme/dialog
+  file/drupal.file:
+    - my_demo_theme/file
+  core/drupal.progress:
+    - my_demo_theme/progress
+core_version_requirement: ^10
+generator: 'starterkit_theme:10.2.5'
