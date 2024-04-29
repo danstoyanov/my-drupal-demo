@@ -8,3 +8,10 @@ function icecream_preprocess_region(&$variables) {
     $variables['attributes']['class'][] = theme_get_setting('site_branding_bg_color');
   }
 }
+
+function icecream_preprocess_node(&$variables)
+{
+  if ($variables['logged_in'] == TRUE && $variables['node']->getOwnerId() == $variables['user']->id()) {
+    $variables['label']['#suffix'] = ' [you are the author]';
+  }
+}
