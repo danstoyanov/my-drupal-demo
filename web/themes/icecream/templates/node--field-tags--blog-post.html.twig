@@ -1,0 +1,11 @@
+<ul class='blog-post__tags field__items'>
+  {% for item in items %}
+    {% if loop.first %}
+      <li{{ item.attributes.addClass(['blog-post__tag', 'first']) }}>{{ item.content }}</li>
+    {% elseif loop.last %}
+      <li{{ item.attributes.addClass(['blog-post__tag', 'last']) }}>{{ item.content }}</li>
+    {% else %}
+      <li{{ item.attributes.addClass('blog-post__tag') }}>{{ item.content }}</li>
+    {% endif %}
+  {% endfor %}
+</ul>
