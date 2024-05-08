@@ -1,0 +1,7 @@
+friendly-greeting:
+  version: 1.0
+  license: GPL
+  js:
+    js/friendly-greeting.js: { }
+  dependencies:
+    - core/drupalSettings

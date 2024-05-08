@@ -1,0 +1,6 @@
+name: friendly
+type: theme
+description: An amazing Friendly theme
+package: Other
+core_version_requirement: ^9 || ^10
+base theme: olivero
